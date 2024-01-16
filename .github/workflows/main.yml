@@ -1,1 +1,19 @@
+name : Tag Workflow
 
+on : push
+
+jobs:
+  job1:
+    env: 
+        VAR1: 5
+    runs-on : ubuntu-latest
+    steps:
+      - name: Step 1
+        run: echo VAR1
+
+  job2:
+    if: failure()
+    runs-on : ubuntu-latest
+    steps:
+      - name: Step 2
+        run: echo "Le Job 1 à échoué"
