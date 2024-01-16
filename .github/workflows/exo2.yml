@@ -18,7 +18,6 @@ jobs:
             echo $B
 
   job2:
-    if: failure()
     runs-on: ubuntu-latest
 
     steps:
