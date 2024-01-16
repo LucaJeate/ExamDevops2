@@ -10,13 +10,12 @@ env:
 jobs:
     
   job1:
-    if: A >= 0  B >= 0
     runs-on : ubuntu-latest
     steps:
       - name: Step 1
         run: |
-            echo A
-            echo B
+            echo $A
+            echo $B
 
   job2:
     if: failure()
