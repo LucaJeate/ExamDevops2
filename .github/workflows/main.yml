@@ -1,4 +1,4 @@
-name : Tag Workflow
+name : Exo1 Workflow
 
 on : push
 
@@ -9,7 +9,7 @@ jobs:
     runs-on : ubuntu-latest
     steps:
       - name: Step 1
-        run: echo VAR1
+        run: echo $VAR1
 
   job2:
     if: failure()
