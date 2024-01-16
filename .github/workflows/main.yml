@@ -1,6 +1,9 @@
 name : Exo1 Workflow
 
-on : push
+on :
+    push:
+        tags:
+          - release*
 
 jobs:
   job1:
